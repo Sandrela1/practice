@@ -1,0 +1,69 @@
+.clients {
+    padding-top: 50px;
+    padding-bottom: 87px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+
+    &_logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all .4s ease-in;
+
+        a {
+
+            &:hover {
+
+                svg path,
+                svg rect {
+                    fill: #00A0C1;
+                }
+            }
+        }
+    }
+
+    form {
+        padding: 30px 50px;
+        background-color: #16697A;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin-bottom: -140px;
+
+
+        h3 {
+            color: #FFFFFF;
+            font-size: 24px;
+            line-height: 32px;
+            max-width: 258px;
+            width: 100%;
+        }
+
+        input {
+            padding: 15px 20px;
+            width: 333px;
+
+        }
+
+        button {
+            font-size: 14px;
+            color: #FFFFFF;
+            background-color: #FFA62B;
+            padding: 14px 20px;
+            position: absolute;
+            right: 50;
+
+        }
+    }
+
+    &_form_items {
+        display: flex;
+        gap: 0;
+    }
+}

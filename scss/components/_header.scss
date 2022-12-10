@@ -1,0 +1,142 @@
+header {
+    padding-top: 36px;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 21px;
+
+        li>a {
+            font-weight: 600;
+            color: $second-color;
+        }
+    }
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: $main-color;
+}
+
+.header_main {
+    padding-top: 116px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    .header_text {
+        display: flex;
+        gap: 35px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h1 {
+            font-weight: 800;
+            line-height: 80px;
+            font-size: 58px;
+            max-width: 509px;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 376px;
+            width: 100%;
+            line-height: 30px;
+        }
+
+        &_buttons {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-weight: 700;
+
+            a {
+                padding: 10px 36px;
+                border-radius: 37px;
+                transition: all .4s ease-in-out;
+            }
+
+            .quote {
+                background-color: #FFA62B;
+                color: #FFFFFF;
+                border: 1px solid #FFA62B;
+
+                &:hover {
+                    background-color: transparent;
+                    color: #FFA62B;
+                }
+            }
+
+            .learn_more {
+                background-color: transparent;
+                color: #00A0C1;
+                border: 1px solid #00A0C1;
+
+                &:hover {
+                    background-color: #00A0C1;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .header_cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: -25px;
+
+
+        &_card {
+            width: 328px;
+            height: 210px;
+            max-width: 100%;
+            padding: 35px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+            transition: all .4s ease-out;
+
+            &:hover {
+                background-color: #00A0C1;
+
+                h3,
+                p {
+                    color: #FFFFFF;
+                }
+
+                svg rect,
+                svg path {
+                    fill: #FFFFFF;
+                    stroke: #FFFFFF;
+                }
+            }
+
+            svg rect,
+            svg path {
+                fill: #00A0C1;
+                stroke: #00A0C1;
+            }
+
+            h3 {
+                font-size: 22px;
+                font-weight: 700;
+            }
+        }
+    }
+}

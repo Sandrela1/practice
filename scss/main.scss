@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'common';
+@import 'components/header';
+@import 'components/why_choose';
+@import 'components/practice';
+@import 'components/business_service';
+@import 'components/clients';
+@import 'components/support';
+@import 'components/contact_us';
+@import 'components/footer';
+
+
+.row {
+    background-color: $main-color;
+    height: 77px;
+}
+
+.copyright {
+    padding: 25px 0;
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
